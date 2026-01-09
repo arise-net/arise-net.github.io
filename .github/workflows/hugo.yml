@@ -18,13 +18,21 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           submodules: recursive
 
-      - name: Setup Node
+      # Hugo MUST be installed first (Tailbliss calls Hugo internally)
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.148.2"
+          extended: true
+
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -37,17 +45,12 @@ jobs:
           cd themes/tailbliss
           pnpm install
 
-      - name: Build Tailbliss assets
+      - name: Build Tailbliss assets (CSS + internal Hugo calls)
         run: |
           cd themes/tailbliss
           pnpm build
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: "0.148.2"
-          extended: true
-
+      # Final Hugo build at site root
       - name: Build site
         run: hugo --minify
 
@@ -62,6 +65,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
