@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://arise-net.github.io/sitemap.xml
