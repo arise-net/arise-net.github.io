@@ -1,0 +1,8 @@
+theme = "blowfish"
+baseURL = "http://arise-net.github.io/"
+defaultContentLanguage = "en"
+
+enableRobotsTXT = true
+pagination.pagerSize = 10
+
+enableGitInfo = true

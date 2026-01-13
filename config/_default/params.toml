@@ -1,0 +1,93 @@
+# Global
+colorScheme = "blowfish"
+defaultAppearance = "dark"
+autoSwitchAppearance = true
+replyByEmail = false
+backgroundImageWidth = 1200
+disableTextInHeader = true
+defaultBackgroundImage = "back/pexels-tomfisk-4610204.jpg"
+
+# Header
+[header]
+  layout = "fixed"
+  
+# Footer
+[footer]
+  showMenu = false
+  showCopyRight = true
+  showThemeAttribution = true
+  showAppearanceSwitcher = true # shows in the header
+  
+# Homepage
+[homepage]
+  layout = "background"
+  showRecent = true
+  showRecentItems = 3
+  cardView = true
+  layoutBackgroundBlur = true
+  
+# Article
+[article]
+  showDate = false
+  showViews = false
+  showLikes = false
+  showDateUpdated = false
+  showAuthor = false
+  showHero = true
+  heroStyle = "background"
+  layoutBackgroundBlur = true
+  showBreadcrumbs = false
+  showDraftLabel = true
+  showEdit = false
+  editAppendPath = true
+  seriesOpened = false
+  showHeadingAnchors = false
+  showReadingTime = false
+  showTableOfContents = true
+  showTaxonomies = false
+  showAuthorsBadges = false
+  showWordCount = false
+  showSummary = true
+  sharingLinks = false
+
+# List
+[list]
+  showHero = true
+  heroStyle = "background"
+  layoutBackgroundBlur = true
+  layoutBackgroundHeaderSpace = true
+  showBreadcrumbs = false
+  showViews = false
+  showLikes = false
+  showSummary = true
+  showTableOfContents = false
+  showCards = false
+  groupByYear = true
+  cardView = true
+  constrainItemsWidth = true
+
+# Sitemap
+
+# Taxonomy
+
+# Term
+
+# Firebase
+
+# Analytics
+
+# BuyMeACoffee
+
+# Verifications
+#[verification]
+#  google = "The site verification string provided by Google to be included in the site metadata."
+
+# RSSNext
+#[rssnet]
+#  feedId = "The rss feedId string provided by RSSNext/Follow to be included in the rss.xml, which can helps to claim rss feed as your own."
+#  userId = "The rss userId string provided by RSSNext/Follow to be included in the rss.xml, which can helps to claim rss feed as your own."
+
+# Advertisement
+#[advertisement]
+#  adsense = "Your Google AdSense Publisher ID (e.g. ca-pub-1234567890abcdef). Set this parameter to enable AdSense ads on your site."
+  
