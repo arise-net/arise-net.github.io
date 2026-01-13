@@ -1,7 +1,7 @@
 # Global
 colorScheme = "blowfish"
 defaultAppearance = "dark"
-autoSwitchAppearance = true
+autoSwitchAppearance = false
 replyByEmail = false
 backgroundImageWidth = 1200
 disableTextInHeader = true
