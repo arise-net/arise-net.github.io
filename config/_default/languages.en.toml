@@ -15,13 +15,11 @@ weight = 1
   secondaryLogo = "img/Logo_Preto.png"
   description = "ARISE Website - Aquatic Research for Impact, Sustainability and Evidence"
   copyright = "© 2026 ARISE"
-  
-# Author
+
 [params.author]
   name = "Aquatic Research for Impact, Sustainability and Evidence"
   email = "tai.loureiro@uwa.edu.au"
   headline = ""
   links = [
-  { github = "https://github.com/arise-net"},
+    { github = "https://github.com/arise-net" }
   ]
-

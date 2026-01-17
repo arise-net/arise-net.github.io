@@ -6,3 +6,16 @@ enableRobotsTXT = true
 pagination.pagerSize = 10
 
 enableGitInfo = true
+
+[params]
+  customCSS = ["css/custom.css"]
+
+[params.list]
+  cardView = true
+  showCardImage = true
+  
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  author = "authors"
+  series = "series"

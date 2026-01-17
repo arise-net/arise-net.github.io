@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+{{ if site.Params.list.showHero }}
+  {{ partial "hero/background.html" . }}
+{{ end }}
+
+<section class="section">
+  <div class="mx-auto max-w-7xl px-6">
+    <h1 class="text-3xl font-bold mb-8">{{ .Title }}</h1>
+
+    <div
+      class="grid gap-8"
+      style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+      {{ range .RegularPages }}
+        {{ partial "people/person-card.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ end }}

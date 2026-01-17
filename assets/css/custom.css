@@ -1,0 +1,17 @@
+.article-link__image {
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 160px;
+}
+
+.article-link__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article-link--card {
+  text-align: center;
+}

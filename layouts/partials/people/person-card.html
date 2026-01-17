@@ -1,0 +1,17 @@
+<article class="rounded-xl p-6 text-center hover:shadow-md transition">
+  {{ with .Params.image }}
+  <img
+    src="{{ . | relURL }}"
+    alt="{{ $.Title }}"
+    class="mx-auto mb-4 h-40 w-40 rounded-full object-cover">
+  {{ end }}
+
+
+  <h2 class="text-lg font-semibold">
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </h2>
+
+  {{ with .Params.role }}
+    <p class="text-sm opacity-70 mt-1">{{ . }}</p>
+  {{ end }}
+</article>
