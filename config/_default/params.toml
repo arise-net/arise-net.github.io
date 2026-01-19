@@ -1,4 +1,5 @@
 # Global
+enablePWA = false # to avoid Progressive Web App (PWA)
 colorScheme = "blowfish"
 defaultAppearance = "dark"
 autoSwitchAppearance = false
@@ -51,7 +52,7 @@ defaultBackgroundImage = "back/pexels-tomfisk-4610204.jpg"
   showSummary = true
   sharingLinks = false
 
-# List - pages like People, using /_index.md
+# List - pages like People and Projects, using /_index.md
 [list]
   showHero = true
   heroStyle = "background"
