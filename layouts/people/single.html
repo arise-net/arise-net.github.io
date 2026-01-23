@@ -11,14 +11,14 @@
     <div class="flex flex-col gap-12 md:flex-row">
 
       <!-- LEFT: Profile -->
-      <aside class="md:w-[260px] px-4">
-        <div class="flex flex-col gap-2">
+      <aside class="md:w-[260px] pr-8">
+        <div class="flex-none">
 
           {{ with .Params.image }}
             <img
               src="{{ . | relURL }}"
               alt="{{ $.Title }}"
-              class="h-40 w-40 rounded-full object-cover">
+              class="h-40 w-40 rounded-full object-cover flex-shrink-0">
           {{ end }}
 
           <div>
