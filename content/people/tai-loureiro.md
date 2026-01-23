@@ -3,18 +3,18 @@ title: "Tai Loureiro"
 role: "Director"
 e-mail: "tai.loureiro@uwa.edu.au"
 image: "/images/people/tai.png"
-description: "Aquatic Ecologist"
+showTableOfContents: true
 social:
   - name: github
     icon: fa-brands fa-github
-    link: https://github.com/johndoe
+    link: https://github.com/TaiLoureiro
 
   - name: linkedin
     icon: fa-brands fa-linkedin
-    link: https://linkedin.com/in/johndoe
+    link: https://www.linkedin.com/in/tain%C3%A3-gon%C3%A7alves-loureiro-086a4889/
 ---
 
-# About me
+## About me
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus sed enim nec viverra. Integer pellentesque nisl id nunc bibendum gravida. Duis id eleifend nisi. Nam nec massa quis nulla volutpat sodales. Suspendisse potenti. Etiam quis dictum ante, tempor dictum est. In pretium dolor eros, ut aliquam mi facilisis suscipit.
 
 Fusce aliquet nulla nulla, eu placerat justo imperdiet in. Ut sed ornare lorem, eget semper nunc. Nam bibendum, urna ut condimentum rhoncus, sem quam lobortis ex, vitae fermentum odio dui ut magna. Proin a laoreet felis. Phasellus ligula ex, luctus sit amet dolor nec, rutrum euismod sapien. Sed aliquet molestie sapien, at lacinia magna iaculis sit amet. Nullam scelerisque diam quis pharetra finibus.
@@ -27,10 +27,10 @@ Etiam ultrices ultricies ultricies. Phasellus iaculis tempor elementum. Duis sag
 
 Donec sagittis ex felis, sed ornare diam gravida sed. Quisque erat tellus, sagittis ac nunc non, auctor blandit augue. Suspendisse vulputate nunc nec tellus scelerisque, id bibendum dui sollicitudin. Integer facilisis sed nisl ac iaculis. Nullam rutrum neque vitae diam faucibus maximus. Vivamus sem ante, maximus et blandit mattis, tempor ut nisi. Maecenas consectetur urna non tortor feugiat ullamcorper. Proin euismod tortor sem, at consequat odio ullamcorper quis. Donec eu scelerisque nisl. Etiam aliquet posuere tortor, sit amet porta leo vestibulum non. Curabitur pharetra cursus accumsan. Phasellus rhoncus eros odio, et egestas lacus rhoncus eget.
 
-# Publications
+## Publications
 
-# Teaching
+## Teaching
 
-# Skills
+## Skills
 
-# Contact
+## Contact

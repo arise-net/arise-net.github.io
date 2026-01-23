@@ -4,48 +4,77 @@
   {{ partial "hero/background.html" . }}
 {{ end }}
 
-
-<section class="section">
+<section class="w-full py-12">
   <div class="mx-auto max-w-6xl px-6">
 
-    <div class="grid gap-10 md:grid-cols-[260px_1fr]">
+    <!-- 🔹 MAIN LAYOUT CONTAINER (THIS WAS MISSING) -->
+    <div class="flex flex-col gap-12 md:flex-row">
 
       <!-- LEFT: Profile -->
-    <aside class="text-left">
-      {{ with .Params.image }}
-        <img
-          src="{{ . | relURL }}"
-          alt="{{ $.Title }}"
-          class="mb-6 h-40 w-40 rounded-full object-cover">
-      {{ end }}
+      <aside class="md:w-[260px] px-4">
+        <div class="flex flex-col gap-2">
 
-      <h1 class="text-2xl font-bold">{{ .Title }}</h1>
-
-      {{ with .Params.role }}
-        <p class="mt-1 text-lg opacity-70">{{ . }}</p>
-      {{ end }}
-
-      {{ with .Params.social }}
-        <ul class="flex gap-4 mt-4">
-          {{ range . }}
-            <li>
-              <a href="{{ .link }}" target="_blank" rel="noopener">
-                <i class="{{ .icon }}"></i>
-              </a>
-            </li>
+          {{ with .Params.image }}
+            <img
+              src="{{ . | relURL }}"
+              alt="{{ $.Title }}"
+              class="h-40 w-40 rounded-full object-cover">
           {{ end }}
-        </ul>
-      {{ end }}
-    </aside>
 
+          <div>
+            <h1 class="text-2xl font-bold">
+              {{ .Title }}
+            </h1>
 
-      <!-- RIGHT: Content -->
-      <div class="prose dark:prose-invert max-w-none">
-        {{ .Content }}
-      </div>
+            {{ with .Params.role }}
+              <p class="mt-1 text-lg opacity-70">
+                {{ . }}
+              </p>
+            {{ end }}
+          </div>
+
+          {{ with .Params.social }}
+            <ul class="flex gap-4">
+              {{ range . }}
+                <li>
+                  <a
+                    href="{{ .link }}"
+                    target="_blank"
+                    rel="noopener"
+                    class="opacity-80 hover:opacity-100">
+                    {{ partial "icon.html" .name }}
+                  </a>
+                </li>
+              {{ end }}
+            </ul>
+          {{ end }}
+
+        </div>
+      </aside>
+
+      <!-- RIGHT: Content + TOC (UNCHANGED) -->
+      <section class="flex-1 min-w-0">
+        <div class="flex flex-col lg:flex-row lg:items-start">
+
+          <!-- MAIN CONTENT -->
+          <div class="prose dark:prose-invert max-w-none lg:flex-1">
+            {{ .Content }}
+          </div>
+
+          <!-- TOC -->
+          {{ if and .Params.showTableOfContents (in .TableOfContents "<ul") }}
+            <div class="order-first lg:ms-auto px-1 lg:order-last lg:ps-8 lg:max-w-2xs">
+              <div class="toc ps-5 print:hidden lg:sticky lg:top-24">
+                {{ partial "toc.html" . }}
+              </div>
+            </div>
+          {{ end }}
+
+        </div>
+      </section>
 
     </div>
-
   </div>
 </section>
+
 {{ end }}
