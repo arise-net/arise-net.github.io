@@ -4,15 +4,14 @@ languageCode = "en"
 languageName = "English"
 weight = 1
 
-
 # Params
 [params]
   displayName = "English"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  logo = "img/Logo_Branco.png"
-  secondaryLogo = "img/Logo_Preto.png"
+  logo = "img/logo/Logo_Branco.png"
+  secondaryLogo = "img/logo/Logo_Preto.png"
   description = "ARISE Website - Aquatic Research for Impact, Sustainability and Evidence"
   copyright = "© 2026 ARISE"
 

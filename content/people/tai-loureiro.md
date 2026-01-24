@@ -5,23 +5,18 @@ image: "/images/people/tai.png"
 showTableOfContents: true
 social:
   - name: linkedin
-    icon: linkedin
     link: https://www.linkedin.com/in/tain%C3%A3-gon%C3%A7alves-loureiro-086a4889/
     
   - name: google-scholar
-    icon: google-scholar
     link: https://scholar.google.com/citations?user=D9Cuk70AAAAJ&hl=en&oi=ao
     
   - name: github
-    icon: github
     link: https://github.com/TaiLoureiro
   
   - name: orcid
-    icon: orcid
     link: https://orcid.org/0000-0002-0069-6605
 
-  - name: email
-    icon: mail
+  - name: envelope
     link: mailto:tai.loureiro@uwa.edu.au
 
 ---

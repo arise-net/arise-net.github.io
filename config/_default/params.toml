@@ -6,7 +6,7 @@ autoSwitchAppearance = false
 replyByEmail = false
 backgroundImageWidth = 1200
 disableTextInHeader = true
-defaultBackgroundImage = "back/pexels-tomfisk-4610204.jpg"
+defaultBackgroundImage = "img/back/IMG_20240718_063957.jpg"
 
 # Header
 [header]
@@ -21,9 +21,8 @@ defaultBackgroundImage = "back/pexels-tomfisk-4610204.jpg"
   
 # Homepage
 [homepage]
-  layout = "background"
+  layout = "background" # valid options: page, profile, hero, card, background, custom
   showRecent = false
-  showRecentItems = 3
   cardView = true
   layoutBackgroundBlur = true
   
@@ -35,9 +34,9 @@ defaultBackgroundImage = "back/pexels-tomfisk-4610204.jpg"
   showDateUpdated = false
   showAuthor = false
   showHero = true
-  heroStyle = "background"
-  layoutBackgroundBlur = true
-  layoutBackgroundHeaderSpace = false
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
+  layoutBackgroundHeaderSpace = false # only used when heroStyle equals background
   showBreadcrumbs = false
   showDraftLabel = true
   showEdit = false
@@ -51,26 +50,39 @@ defaultBackgroundImage = "back/pexels-tomfisk-4610204.jpg"
   showWordCount = false
   showSummary = true
   sharingLinks = false
+  cardImageRatio = "16x9"
 
 # List - pages like People and Projects, using /_index.md
 [list]
   showHero = true
-  heroStyle = "background"
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true
   layoutBackgroundHeaderSpace = false
   showBreadcrumbs = false
   showViews = false
   showLikes = false
-  showSummary = true
+  showSummary = true # in projects, for ex, summary of each project
   showTableOfContents = false
-  cardView = true
+  cardView = false
   showCardImage = true
-  constrainItemsWidth = true
+  constrainItemsWidth = false # constrain text in projects text for ex
+  groupByYear = false # if set to true and there's no date it displays 0001 above cards
+
 
 # Sitemap
 
-# Taxonomy
-
+# Taxonomy - groupings of content - taxonomie, terms and values
+# for ex: 
+# Actor                    <- Taxonomy
+#    Bruce Willis         <- Term
+#        The Sixth Sense  <- Value
+#        Unbreakable      <- Value
+#        Moonrise Kingdom <- Value
+#    Samuel L. Jackson    <- Term
+#        Unbreakable      <- Value
+#        The Avengers     <- Value
+#        xXx              <- Value
+        
 # Term
 
 # Firebase
