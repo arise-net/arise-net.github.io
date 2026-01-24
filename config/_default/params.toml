@@ -6,7 +6,7 @@ autoSwitchAppearance = false
 replyByEmail = false
 backgroundImageWidth = 1200
 disableTextInHeader = true
-defaultBackgroundImage = "img/back/IMG_20240718_063957.jpg"
+defaultBackgroundImage = "images/back/IMG_20240718_063957.jpg"
 
 # Header
 [header]
