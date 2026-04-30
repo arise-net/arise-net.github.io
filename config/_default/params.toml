@@ -16,15 +16,15 @@ defaultBackgroundImage = "images/back/IMG_20240718_063957.jpg"
 [footer]
   showMenu = false
   showCopyRight = true
-  showThemeAttribution = true
+  showThemeAttribution = false # powered by hugo & blowfish
   showAppearanceSwitcher = true # shows in the header
   
 # Homepage
 [homepage]
-  layout = "background" # valid options: page, profile, hero, card, background, custom
-  showRecent = false
-  cardView = true
-  layoutBackgroundBlur = true
+  layout = "custom" # valid options: page, profile, hero, card, background, custom
+#  showRecent = false
+#  cardView = true
+#  layoutBackgroundBlur = true
   
 # Article - pages like about, using /index.md
 [article]

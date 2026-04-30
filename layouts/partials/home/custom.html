@@ -1,0 +1,113 @@
+<!-- ===================== -->
+<!-- HERO / BANNER -->
+<!-- ===================== -->
+{{ with .Params.banner }}
+<section class="py-24">
+  <div class="mx-auto max-w-7xl px-6 text-center">
+
+    <h1 class="mb-6 text-4xl md:text-6xl font-bold">
+      {{ .title | markdownify }}
+    </h1>
+
+    <p class="mx-auto mb-8 max-w-2xl text-lg opacity-80">
+      {{ .content | markdownify }}
+    </p>
+
+    {{ with .button }}
+      {{ if .enable }}
+        <a
+          href="{{ .link | absURL }}"
+          class="inline-block rounded-md bg-primary-600 px-6 py-3 text-white hover:bg-primary-500 transition"
+          {{ if strings.HasPrefix .link `http` }}target="_blank" rel="noopener"{{ end }}>
+          {{ .label }}
+        </a>
+      {{ end }}
+    {{ end }}
+
+    {{ with .image }}
+      <div class="mt-16">
+        <img
+          src="{{ . | relURL }}"
+          alt="Banner image"
+          class="mx-auto max-w-3xl">
+      </div>
+    {{ end }}
+
+  </div>
+</section>
+{{ end }}
+
+<!-- ===================== -->
+<!-- FEATURES -->
+<!-- ===================== -->
+{{ range $i, $e := .Params.features }}
+<section class="py-24 {{ if modBool $i 2 }}bg-neutral-100 dark:bg-neutral-900{{ end }}">
+  <div class="mx-auto max-w-7xl px-6">
+
+    <div class="flex flex-col md:flex-row items-center gap-16">
+
+      <!-- IMAGE -->
+      <div class="md:w-1/2 {{ if not (modBool $i 2) }}md:order-2{{ end }}">
+        <img
+          src="{{ .image | relURL }}"
+          alt="Feature image"
+          class="w-full max-w-lg mx-auto">
+      </div>
+
+      <!-- TEXT -->
+      <div class="md:w-1/2 {{ if not (modBool $i 2) }}md:order-1{{ end }}">
+
+        <h2 class="mb-6 text-3xl font-semibold">
+          {{ .title | markdownify }}
+        </h2>
+
+        <p class="mb-8 text-lg opacity-80">
+          {{ .content | markdownify }}
+        </p>
+
+        {{ if .bulletpoints }}
+        <ul class="space-y-4 mb-8">
+          {{ range .bulletpoints }}
+            <li class="flex items-start gap-3">
+              <span class="text-primary-600">
+                <i class="fa fa-check"></i>
+              </span>
+              <span>{{ . | markdownify }}</span>
+            </li>
+          {{ end }}
+        </ul>
+        {{ end }}
+
+        {{ with .button }}
+          {{ if .enable }}
+            <a
+              href="{{ .link | absURL }}"
+              class="inline-block rounded-md bg-primary-600 px-6 py-3 text-white hover:bg-primary-500 transition">
+              {{ .label }}
+              <i class="fa fa-arrow-right pl-2"></i>
+            </a>
+          {{ end }}
+        {{ end }}
+
+      </div>
+
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- ===================== -->
+<!-- CALL TO ACTION -->
+<!-- ===================== -->
+<section class="py-24">
+  <div class="mx-auto max-w-5xl px-6 text-center">
+    <h2 class="mb-6 text-3xl font-semibold">
+      Ready to collaborate?
+    </h2>
+    <a
+      href="/contact/"
+      class="inline-block rounded-md bg-primary-600 px-8 py-4 text-white hover:bg-primary-500 transition">
+      Contact Us
+    </a>
+  </div>
+</section>
