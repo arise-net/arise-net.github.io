@@ -8,10 +8,7 @@ banner:
     enable: true
     label: "A quick link"
     link: "https://app.sitepins.com/new/clone?name=Hugoplate&repository=https://github.com/zeon-studio/hugoplate/"
-    
----
 
----
 # Features
 features:
   - title: "Mission"
